@@ -13,6 +13,7 @@ export default function SolarLandingPage() {
   });
   const whatsappHref =
     "https://wa.me/5598999332000?text=Olá%2C%20quero%20uma%20simulação%20de%20energia%20solar%20com%20a%20I-Luminar%20Energia.";
+const instagramHref = "https://instagram.com/iluminar_energia";
 
   function handleInputChange(
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -584,14 +585,25 @@ export default function SolarLandingPage() {
                   <p className="mt-3 text-2xl font-semibold text-[#102218]">
                     (98) 99933-2000
                   </p>
-                  <a
-                    href={whatsappHref}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-5 inline-flex rounded-2xl border border-[#f8b319]/50 bg-[#f8b319] px-5 py-3 text-sm font-semibold text-[#3f2a00] shadow-[0_14px_30px_rgba(248,179,25,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ffbf2f]"
-                  >
-                    Abrir conversa no WhatsApp
-                  </a>
+                  <div className="mt-5 flex flex-col gap-4">
+                    <a
+                      href={instagramHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex w-fit rounded-2xl border border-[#f8b319]/50 bg-[#f8b319] px-5 py-3 text-sm font-semibold text-[#3f2a00] shadow-[0_14px_30px_rgba(248,179,25,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ffbf2f]"
+                    >
+                      Abrir Instagram
+                    </a>
+
+                    <a
+                      href={whatsappHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex w-fit rounded-2xl border border-[#f8b319]/50 bg-[#f8b319] px-5 py-3 text-sm font-semibold text-[#3f2a00] shadow-[0_14px_30px_rgba(248,179,25,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ffbf2f]"
+                    >
+                      Abrir conversa no WhatsApp
+                    </a>
+                  </div>
                 </div>
               </div>
 
