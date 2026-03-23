@@ -13,7 +13,7 @@ export default function SolarLandingPage() {
   });
   const whatsappHref =
     "https://wa.me/5598999332000?text=Olá%2C%20quero%20uma%20simulação%20de%20energia%20solar%20com%20a%20I-Luminar%20Energia.";
-const instagramHref = "https://instagram.com/iluminar_energia";
+  const instagramHref = "https://instagram.com/iluminar_energia";
 
   function handleInputChange(
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -119,13 +119,13 @@ const instagramHref = "https://instagram.com/iluminar_energia";
 
   const projects = [
     {
-      title: "Residência com geração própria",
+      title: "Usina Residencial",
       location: "Santo Amaro - MA",
       category: "Projeto residencial de 6,1 kWp",
       imageSrc: "/obras/obra-1.png",
     },
     {
-      title: "Residência com economia imediata",
+      title: "Usina Residencial",
       location: "São Luís - MA",
       category: "Projeto residencial de 4,88 kWp",
       imageSrc: "/obras/obra-2.jpg",
@@ -135,6 +135,24 @@ const instagramHref = "https://instagram.com/iluminar_energia";
       location: "Santo Amaro - MA",
       category: "Projeto comercial de 41,40 kWp",
       imageSrc: "/obras/obra-3.png",
+    },
+    {
+      title: "Usina Comercial",
+      location: "São José de Ribamar - MA",
+      category: "Projeto comercial 44,80 kWp",
+      imageSrc: "/obras/obra-4.png",
+    },
+    {
+      title: "Usina Residencial",
+      location: "São Luís - MA",
+      category: "Projeto residencial 16,80 kWp",
+      imageSrc: "/obras/obra-5.png",
+    },
+    {
+      title: "Usina Comercial",
+      location: "São José de Ribamar - MA",
+      category: "Projeto comercial 225 kWp",
+      imageSrc: "/obras/obra-6.png",
     },
   ];
 
@@ -268,19 +286,18 @@ const instagramHref = "https://instagram.com/iluminar_energia";
                 <div className="rounded-[1.5rem] border border-[#018d5f]/10 bg-white/80 p-6">
                   <div className="rounded-[1.5rem] bg-[linear-gradient(145deg,#fff7db_0%,#fff1bf_38%,#ebfff5_100%)] p-8 text-zinc-950">
                     <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#8a5b00]">
-                      Simulação ilustrativa
+                      Pré-proposta comercial
                     </p>
                     <h2 className="mt-3 text-3xl font-semibold leading-tight">
-                      Um projeto bem dimensionado pode transformar sua conta em
-                      previsibilidade.
+                      Economia clara, retorno rápido e projeto bem dimensionado.
                     </h2>
                     <p className="mt-4 max-w-lg text-sm leading-6 text-zinc-700">
-                      Os valores abaixo são apenas um exemplo comercial. A
-                      economia real depende do consumo, da tarifa, da área
-                      disponível e do dimensionamento do sistema.
+                      A I-Luminar Energia desenvolve propostas sob medida para
+                      residências, comércios e empresas que querem reduzir custos
+                      com segurança e previsibilidade.
                     </p>
 
-                    <div className="mt-8 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+                    <div className="mt-8 grid gap-5 lg:grid-cols-[0.88fr_1.12fr]">
                       <div className="rounded-[1.75rem] border border-[#f8b319]/20 bg-white/70 p-5 shadow-[0_18px_40px_rgba(16,24,40,0.06)]">
                         <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full bg-[conic-gradient(#018d5f_0deg,#018d5f_288deg,#ffffff_288deg,#ffffff_360deg)] p-3">
                           <div className="flex h-full w-full flex-col items-center justify-center rounded-full bg-[#fffaf0] text-center">
@@ -447,7 +464,7 @@ const instagramHref = "https://instagram.com/iluminar_energia";
               </div>
             </div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {projects.map((project) => (
                 <article
                   key={`${project.title}-${project.location}`}
