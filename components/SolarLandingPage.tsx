@@ -150,20 +150,16 @@ export default function SolarLandingPage() {
       </a>
 
       <header className="sticky top-0 z-40 border-b border-[#018d5f]/10 bg-white/75 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1.5 lg:px-8">
+          <div className="flex items-center">
             <Image
               src="/logo.png"
               alt="I-Luminar Energia"
-              width={340}
-              height={100}
-              className="h-24 w-auto"
+              width={460}
+              height={140}
+              className="h-28 w-auto"
               priority
             />
-
-            <p className="hidden text-sm text-zinc-600 sm:block">
-              Energia solar em São Luís - MA e região
-            </p>
           </div>
 
           <nav className="hidden items-center gap-3 text-sm text-zinc-700 md:flex">
@@ -269,45 +265,83 @@ export default function SolarLandingPage() {
               <div className="absolute -left-8 top-12 hidden h-28 w-28 rounded-full border border-[#f8b319]/20 bg-[#f8b319]/10 blur-2xl lg:block" />
               <div className="rounded-[2rem] border border-white/70 bg-white/70 p-4 shadow-[0_30px_80px_rgba(16,24,40,0.12)]">
                 <div className="rounded-[1.5rem] border border-[#018d5f]/10 bg-white/80 p-6">
-                  <div className="rounded-[1.5rem] bg-gradient-to-br from-[#ffd45c] via-[#f8b319] to-[#22b87e] p-8 text-zinc-950">
-                    <p className="text-sm font-medium uppercase tracking-[0.2em]">
-                      Simulação rápida
+                  <div className="rounded-[1.5rem] bg-[linear-gradient(145deg,#fff7db_0%,#fff1bf_38%,#ebfff5_100%)] p-8 text-zinc-950">
+                    <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#8a5b00]">
+                      Simulação ilustrativa
                     </p>
                     <h2 className="mt-3 text-3xl font-semibold leading-tight">
-                      Descubra quanto você pode economizar todos os meses.
+                      Um projeto bem dimensionado pode transformar sua conta em
+                      previsibilidade.
                     </h2>
-                    <p className="mt-4 text-sm leading-6 text-zinc-800">
-                      Solicite sua análise e receba uma proposta comercial com
-                      estimativa de economia, payback e solução ideal para o seu
-                      perfil de consumo.
+                    <p className="mt-4 max-w-lg text-sm leading-6 text-zinc-700">
+                      Os valores abaixo são apenas um exemplo comercial. A
+                      economia real depende do consumo, da tarifa, da área
+                      disponível e do dimensionamento do sistema.
                     </p>
 
-                    <div className="mt-8 space-y-3 rounded-2xl bg-white/60 p-5 backdrop-blur">
-                      <div className="flex items-center justify-between rounded-xl bg-white px-4 py-3">
-                        <span className="text-sm font-medium">
-                          Conta média mensal
-                        </span>
-                        <span className="text-sm">R$ 3.500</span>
+                    <div className="mt-8 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+                      <div className="rounded-[1.75rem] border border-[#f8b319]/20 bg-white/70 p-5 shadow-[0_18px_40px_rgba(16,24,40,0.06)]">
+                        <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full bg-[conic-gradient(#018d5f_0deg,#018d5f_288deg,#ffffff_288deg,#ffffff_360deg)] p-3">
+                          <div className="flex h-full w-full flex-col items-center justify-center rounded-full bg-[#fffaf0] text-center">
+                            <span className="text-4xl font-semibold text-[#018d5f]">
+                              80%
+                            </span>
+                            <span className="mt-1 max-w-[6rem] text-xs uppercase tracking-[0.18em] text-zinc-600">
+                              de economia estimada
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="mt-5 rounded-2xl bg-[#102218] px-4 py-4 text-white">
+                          <p className="text-xs uppercase tracking-[0.2em] text-white/70">
+                            Economia mensal
+                          </p>
+                          <p className="mt-2 text-3xl font-semibold">
+                            R$ 2.800
+                          </p>
+                          <p className="mt-2 text-sm text-white/70">
+                            Com base em uma conta média de R$ 3.500.
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex items-center justify-between rounded-xl bg-white px-4 py-3">
-                        <span className="text-sm font-medium">
-                          Economia estimada
-                        </span>
-                        <span className="text-sm">até R$ 3.150</span>
-                      </div>
-                      <div className="flex items-center justify-between rounded-xl bg-white px-4 py-3">
-                        <span className="text-sm font-medium">
-                          Payback estimado
-                        </span>
-                        <span className="text-sm">a partir de 3 a 5 anos</span>
+
+                      <div className="grid gap-4">
+                        <div className="rounded-[1.5rem] border border-[#018d5f]/12 bg-white/80 p-5 shadow-[0_14px_30px_rgba(16,24,40,0.05)]">
+                          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                            Conta média mensal
+                          </p>
+                          <p className="mt-2 text-2xl font-semibold text-[#102218]">
+                            R$ 3.500
+                          </p>
+                        </div>
+
+                        <div className="rounded-[1.5rem] border border-[#018d5f]/12 bg-white/80 p-5 shadow-[0_14px_30px_rgba(16,24,40,0.05)]">
+                          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                            Payback estimado
+                          </p>
+                          <p className="mt-2 text-2xl font-semibold text-[#102218]">
+                            Cerca de 2 anos
+                          </p>
+                        </div>
+
+                        <div className="rounded-[1.5rem] border border-[#018d5f]/12 bg-white/80 p-5 shadow-[0_14px_30px_rgba(16,24,40,0.05)]">
+                          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                            Leitura comercial
+                          </p>
+                          <p className="mt-2 text-sm leading-7 text-zinc-700">
+                            Uma análise técnica correta mostra o potencial de
+                            economia e o retorno do investimento com muito mais
+                            clareza para a decisão.
+                          </p>
+                        </div>
                       </div>
                     </div>
 
-                    <div className="mt-6 rounded-2xl border border-zinc-900/10 bg-zinc-950/10 p-4">
-                      <p className="text-xs uppercase tracking-[0.2em] text-zinc-700">
+                    <div className="mt-6 rounded-2xl border border-[#018d5f]/12 bg-white/65 p-4">
+                      <p className="text-xs uppercase tracking-[0.2em] text-zinc-600">
                         Diferencial I-Luminar Energia
                       </p>
-                      <p className="mt-2 text-sm leading-6 text-zinc-800">
+                      <p className="mt-2 text-sm leading-6 text-zinc-700">
                         Atendimento consultivo, análise técnica e instalação com
                         foco em economia real e retorno inteligente.
                       </p>
@@ -325,7 +359,7 @@ export default function SolarLandingPage() {
         >
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
             <div className="max-w-2xl">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#22b87e]">
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#ffd45c]">
                 Benefícios
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -443,12 +477,12 @@ export default function SolarLandingPage() {
           </div>
         </section>
 
-        <section className="border-t border-[#018d5f]/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.35),rgba(247,250,247,0.95))]">
+        <section className="border-t border-[#018d5f]/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.72),rgba(247,250,247,0.92))]">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-            <div className="rounded-[2rem] border border-[#018d5f]/10 bg-white/88 p-8 shadow-[0_20px_60px_rgba(16,24,40,0.06)] lg:p-12">
+            <div className="rounded-[2rem] border border-[#018d5f]/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(245,251,247,0.96))] p-8 shadow-[0_20px_60px_rgba(16,24,40,0.06)] lg:p-12">
               <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div>
-                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#22b87e]">
+                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#ffd45c]">
                     Por que escolher a I-Luminar Energia
                   </p>
                   <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -463,7 +497,7 @@ export default function SolarLandingPage() {
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] p-5">
+                  <div className="rounded-2xl border border-[#018d5f]/10 bg-white/98 p-5 shadow-[0_12px_30px_rgba(16,24,40,0.04)]">
                     <p className="text-sm text-zinc-500">
                       Projetos personalizados
                     </p>
@@ -471,7 +505,7 @@ export default function SolarLandingPage() {
                       Dimensionamento sob medida
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] p-5">
+                  <div className="rounded-2xl border border-[#018d5f]/10 bg-white/98 p-5 shadow-[0_12px_30px_rgba(16,24,40,0.04)]">
                     <p className="text-sm text-zinc-500">
                       Equipe especializada
                     </p>
@@ -479,13 +513,13 @@ export default function SolarLandingPage() {
                       Instalação com padrão técnico
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] p-5">
+                  <div className="rounded-2xl border border-[#018d5f]/10 bg-white/98 p-5 shadow-[0_12px_30px_rgba(16,24,40,0.04)]">
                     <p className="text-sm text-zinc-500">Suporte completo</p>
                     <p className="mt-2 text-lg font-semibold">
                       Acompanhamento até a homologação
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] p-5">
+                  <div className="rounded-2xl border border-[#018d5f]/10 bg-white/98 p-5 shadow-[0_12px_30px_rgba(16,24,40,0.04)]">
                     <p className="text-sm text-zinc-500">Visão financeira</p>
                     <p className="mt-2 text-lg font-semibold">
                       Retorno com previsibilidade
@@ -497,7 +531,7 @@ export default function SolarLandingPage() {
           </div>
         </section>
 
-        <section className="border-t border-[#018d5f]/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.2),rgba(247,250,247,0.95))]">
+        <section className="border-t border-[#018d5f]/10 bg-white/35">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#ffd45c]">
@@ -516,7 +550,7 @@ export default function SolarLandingPage() {
               {faqs.map((item) => (
                 <div
                   key={item.question}
-                  className="rounded-[1.6rem] border border-[#018d5f]/10 bg-white/88 p-6 shadow-[0_16px_40px_rgba(16,24,40,0.04)]"
+                  className="rounded-[1.6rem] border border-[#018d5f]/10 bg-white/92 p-6 shadow-[0_16px_40px_rgba(16,24,40,0.04)]"
                 >
                   <h3 className="text-lg font-semibold text-[#102218]">
                     {item.question}
@@ -528,7 +562,7 @@ export default function SolarLandingPage() {
           </div>
         </section>
 
-        <section id="contato" className="border-t border-[#018d5f]/10">
+        <section id="contato" className="border-t border-[#018d5f]/10 bg-white/35">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
             <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
               <div>
@@ -543,7 +577,7 @@ export default function SolarLandingPage() {
                   consultivo e focado em fechar a melhor solução para o seu
                   imóvel ou negócio.
                 </p>
-                <div className="mt-8 rounded-[1.75rem] border border-[#018d5f]/10 bg-white/88 p-6 shadow-[0_20px_50px_rgba(16,24,40,0.05)]">
+                <div className="mt-8 rounded-[1.75rem] border border-[#018d5f]/10 bg-white/92 p-6 shadow-[0_20px_50px_rgba(16,24,40,0.05)]">
                   <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
                     Atendimento direto
                   </p>
@@ -554,7 +588,7 @@ export default function SolarLandingPage() {
                     href={whatsappHref}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-5 inline-flex rounded-2xl border border-[#018d5f]/20 bg-[#018d5f]/10 px-5 py-3 text-sm font-medium text-[#018d5f] transition hover:bg-[#018d5f]/20"
+                    className="mt-5 inline-flex rounded-2xl border border-[#f8b319]/50 bg-[#f8b319] px-5 py-3 text-sm font-semibold text-[#3f2a00] shadow-[0_14px_30px_rgba(248,179,25,0.24)] transition hover:-translate-y-0.5 hover:bg-[#ffbf2f]"
                   >
                     Abrir conversa no WhatsApp
                   </a>
@@ -562,7 +596,7 @@ export default function SolarLandingPage() {
               </div>
 
               <form
-                className="rounded-[2rem] border border-[#018d5f]/10 bg-white/88 p-6 shadow-[0_20px_60px_rgba(16,24,40,0.06)] sm:p-8"
+                className="rounded-[2rem] border border-[#018d5f]/10 bg-white/92 p-6 shadow-[0_20px_60px_rgba(16,24,40,0.06)] sm:p-8"
                 onSubmit={handleSubmit}
               >
                 <div className="grid gap-4">
@@ -572,7 +606,7 @@ export default function SolarLandingPage() {
                     placeholder="Nome"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
+                    className="rounded-2xl border border-[#018d5f]/10 bg-white px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
                     required
                   />
                   <input
@@ -581,7 +615,7 @@ export default function SolarLandingPage() {
                     placeholder="E-mail"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
+                    className="rounded-2xl border border-[#018d5f]/10 bg-white px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
                     required
                   />
                   <input
@@ -590,7 +624,7 @@ export default function SolarLandingPage() {
                     placeholder="WhatsApp"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
+                    className="rounded-2xl border border-[#018d5f]/10 bg-white px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
                     required
                   />
                   <textarea
@@ -599,7 +633,7 @@ export default function SolarLandingPage() {
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="rounded-2xl border border-[#018d5f]/10 bg-[#f9fdfb] px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
+                    className="rounded-2xl border border-[#018d5f]/10 bg-white px-4 py-3 text-[#102218] outline-none placeholder:text-zinc-500 focus:border-[#f8b319]"
                   />
                   <button
                     type="submit"
