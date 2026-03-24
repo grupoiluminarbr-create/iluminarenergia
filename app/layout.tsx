@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-});
-
 export const metadata: Metadata = {
-  title: "I-Luminar Energia | Energia solar em São Luís - MA e região",
+  title: "I-Luminar Energia | Reduza sua conta com energia solar em São Luís",
   description:
-    "Projetos de energia solar para residências, comércios e empresas em São Luís - MA e região, com instalação homologada e foco em economia real.",
+    "Solicite uma simulação gratuita de energia solar com a I-Luminar Energia. Projetos para residências, comércios e empresas em São Luís e região.",
 };
 
 export default function RootLayout({
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={manrope.variable}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
