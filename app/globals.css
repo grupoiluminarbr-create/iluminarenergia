@@ -33,7 +33,11 @@ body {
     radial-gradient(circle at 50% 100%, rgba(14, 165, 114, 0.06), transparent 30%),
     linear-gradient(180deg, var(--bg-start) 0%, var(--bg-mid) 45%, var(--bg-end) 100%);
   color: #102218;
-  font-family: var(--font-manrope), sans-serif;
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    sans-serif;
   text-rendering: optimizeLegibility;
 }
 
